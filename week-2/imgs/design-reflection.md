@@ -1,1 +1,1 @@
-![Alt text](imgs/jonathanNicolas_SiteMap.png)
+![Alt text](imgs/jonathanNicolas_SiteMap.jpg)
