@@ -1,0 +1,61 @@
+html {
+  background-color: white;
+  color: #000080;
+}
+
+address{
+  text-align: center;
+  font-weight: bold;
+}
+
+a{
+  color:#800080;
+}
+
+
+
+li {
+    float:right;
+    width:50%;
+}
+
+li p{
+  font-size: 75%
+}
+
+section{
+  border-bottom: 1px solid black;
+}
+
+address span {
+  font-size: 1.5em;
+}
+
+#inc{
+  font-size: 75%;
+}
+
+.geico{
+  text-align: center;
+  font-size: 0.6em;
+  padding-top: 50px;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+The relative path location is important
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+I used the float:right trick to create the two columns.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+Font-size with em and as a % was very useful
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+Yes, I used IDs and classes when it came to modify very specific objects.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+It is all style in html so I think we have a best practice overall. However the site used different tags than me notably the table tag. Thinking about, I think that is a cleaner way to work.
+
+*/
