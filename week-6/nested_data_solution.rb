@@ -54,19 +54,25 @@ p number_array
 
 # Bonus:
 
-startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
-startup_names.map!{|element|
-  if element.kind_of?(Array)
-    element.map!{|sub_element|
-      if sub_element.kind_of?(Array)
-          sub_element.map!{|sub_sub_element} sub_sub_element += "ly"}
-      else
-        sub_element += "ly"}
-      else
+# startup_names.map!{|element|
+#   if element.kind_of?(Array)
+#     element.map!{|sub_element|
+#       if sub_element.kind_of?(Array)
+#           sub_element.map!{|sub_sub_element} sub_sub_element += "ly"}
+#       else
+#         sub_element += "ly"}
+#       else
 
 
-      end
-    }
+#       end
+#     }
 
-end
+# end
+
+
+# reflection
+# What are some general rules you can apply to nested arrays?Understanding what object is in the array is very important and it can get tricky with nested loops.
+# What are some ways you can iterate over nested arrays?We can use nested loops
+# Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?.map! .kind_of? were methods that were very useful.
