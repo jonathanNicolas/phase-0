@@ -62,27 +62,33 @@ end
 jo_card = CreditCard.new(4563960122001999)
 p jo_card.check_card
 
-# class Person
-#   def set_name(string)
-#     puts "Setting person's name..."
-#     @name = string
-#   end
 
-#   def get_name
-#     puts "Returning the person's name..."
-#     @name
-#   end
-# end
-
-# joe = Person.new
-# joe.set_name("Joe")
-# puts joe.get_name
 
 
 # Refactored Solution
 
 
-
+# class CreditCard
+# ​
+#  attr_reader :card_digits
+# ​
+#  def initialize(card_digits)
+#    @card_digits = card_digits
+#    raise ArgumentError.new("Card Number must contain 16 digits!") unless @card_digits.to_s.length == 16
+#  end
+# ​
+#  def check_card
+#   digits = ''
+#   @card_digits.to_s.split('').reverse.each_with_index do |d, i|
+#     digits += d if i%2 == 0
+#     digits += (d.to_i*2).to_s if i%2 == 1
+#   end
+#   digits.split('').inject(0){|sum,d| sum + d.to_i}%10 == 0
+#  end
+# end
+# ​
+# jo_card = CreditCard.new(4563960122001999)
+# p jo_card.check_card
 
 
 
@@ -90,23 +96,6 @@ p jo_card.check_card
 
 # Reflection
 
-# def sumin(n)
-#   1.upto(n).inject(0) { |m, i|  m + i * (2 * (n - i) + 1) }
-# end
-
-# p sumin(2)
-
-# # 0 + 1 *(2*(2-1)+1) = 3
-# # 3 + 2 *(2*(0)+1) = 5
-
-# def sumax(n)
-#   1.upto(n).inject(0) { |m, i|  m + i * (2 * i - 1) }
-# end
-
-# p sumax(2)
-
-
-# # 0 + 1*(2*1 -1) = 1
-# # 1 + 2*(2*2 -1) = 7
-
-# self.match(/[\s*]/) ? false : true
+# What was the most difficult part of this challenge for you and your pair?Understand what the data we were working with when calling methods was our biggest challenge
+# What new methods did you find to help you when you refactored?the inject method is so versatile and powerful, that was the key for us.
+# What concepts or learnings were you able to solidify in this challenge?working with the inject method made me understand its possibilities it can offer.
