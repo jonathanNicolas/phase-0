@@ -17,10 +17,6 @@
 
 
 
-
-
-
-
 // Initial Solution
 
 // var number = 233498354253420;
@@ -111,16 +107,24 @@ console.log(formatNumber(23343232254545))
 
 
 
-
-
-
-
 // Your Own Tests (OPTIONAL)
 
 
 
 
 // Reflection
+
+
+// What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently? I approached it exact same was as ruby
+// What did you learn about iterating over arrays in JavaScript? I got to use the while-loop
+// What was different about solving this problem in JavaScript? Updating the counter was a little tricky as when you insert the comma the counter needs to be updated by 4 and not 3.
+// What built-in methods did you find to incorporate in your refactored solution? I used the .splice method on the array.
+
+
+
+
+
+
 
 
 
