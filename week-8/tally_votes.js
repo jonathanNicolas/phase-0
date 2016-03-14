@@ -64,19 +64,25 @@ var officers = {
 
 // Pseudocode
 
-
+FOR each key in votes
+  FOR each position in votes[key]
+    IF (voteCount) already has a property the matches the name
+    THEN increment the tally by 1
+    ELSE create name and set equal to 1
+  END
+END
 
 
 
 // __________________________________________
 // Initial Solution
-//var offices = ["president"]
+
 
 
 for (var key in votes){
-       console.log(votes[key]);
+       //console.log(votes[key]);
        for(var position in votes[key]){
-        console.log(votes[key][position])
+        //console.log(votes[key][position])
           if ((voteCount[position]).hasOwnProperty(votes[key][position])) {
               voteCount[position][votes[key][position]] += 1;
               }
@@ -126,7 +132,9 @@ console.log(officers);
 // Reflection
 
 
-
+// What did you learn about iterating over nested objects in JavaScript? To iterate within nested objects in this case objects are nested within another object, you can use two For loops which is quite logical.
+// Were you able to find useful methods to help you with this? I did not use methods much even to find the max vote per position I used control structures instead.
+// What concepts were solidified in the process of working through this challenge? Referency key/value pairs of objects within objects was reinforced.
 
 
 

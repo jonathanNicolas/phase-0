@@ -62,12 +62,15 @@ gradebook.getAverage = function(name){
   return average(gradebook[name]["testScores"]);
 }
 
-funtion average(array){
-  var total = 0;
-  for (var i in array){
+// function average (array){
+//   var total = 0;
+//   for(var i in array){
+//     total+=array[i];
+//   };
+//   var average = total/array.length;
+//   return average;
+// };
 
-  }
-}
 
 
 // __________________________________________
@@ -75,7 +78,10 @@ funtion average(array){
 
 
 
-
+var average = function(array){
+   var  total = array.reduce(function(a, b) { return a + b;});
+   return total /array.length;
+};
 
 
 
@@ -83,7 +89,10 @@ funtion average(array){
 // __________________________________________
 // Reflect
 
-
+// What did you learn about adding functions to objects?
+// I learned that we can add a function to an object using the dot notation followed by defining a function. However this function will be specific to the object. A good thing to know is that using the object constructor will assign a copy of that function to every new instance of your object. Using prototyping will result in one function being shared across all instances. There are different ways to adding functions to objects.
+// How did you iterate over nested arrays in JavaScript? I used for in loops
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work? I was able to incorporate the .reduce which is a higher order function, very ractical and versatile function, that comes in handy.
 
 
 
